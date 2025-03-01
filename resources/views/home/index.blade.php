@@ -4,7 +4,7 @@
 
 @section('content')
     <div>
-        <div style="padding-left: 24px">
+        <div >
             @include('components.hero')
             @include('components.about')
         </div>
