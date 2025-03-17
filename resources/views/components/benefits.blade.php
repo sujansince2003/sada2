@@ -10,22 +10,41 @@
             padding: 0;
             box-sizing: border-box;
             font-family: sans-serif;
+            
         }
 
-        .bg-black {
-            background: black;
-            color: white;
-        }
+        
 
-        .section {
-            padding: 4rem 1.5rem;
+        .section1 {
+            padding: 2rem 1.5rem;
             text-align: center;
+            background-color: black;
+           
+         
+           
         }
 
         .section h2 {
             font-size: 2.25rem;
             font-weight: bold;
             margin-bottom: 1rem;
+
+        
+        }
+
+        .section-txt
+        {
+            
+            text-align: center;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 50px 10px;
+        }
+
+        .section-txt h2{
+            font-size: 40px;
         }
 
         .section p {
@@ -69,10 +88,16 @@
             margin-bottom: 1rem;
         }
 
-        .card h3 {
+        .card h2 {
             font-size: 1.875rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
+        }
+        .card .blacktext {
+            font-size: 1.875rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: black
         }
 
         .card p {
@@ -98,51 +123,55 @@
 
 <div class="bg-black">
     <!-- Main Section -->
-    <section class="section">
+    <section class="section1">
+        <div class="section-txt">
+
+      
         <h2>Enjoy Our Excellent Service</h2>
         <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, liat Europa usa li sam vocabular.</p>
-      
+    </div>
         <!-- Grid Section -->
         <div class="grid">
             <!-- UI/UX Design -->
             <div class="card">
                 <img src="/uiuxbenefit.png" alt="">
-                <h3>UI/UX Design</h3>
+                <h2 class="blacktext">UI/UX Design</h2>
                 <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
             </div>
 
             <!-- Graphics Design -->
             <div class="card bg-yellow">
                 <img src="/designbenefit.png" alt="">
-                <h3>Graphics Design</h3>
+                <h2>Graphics Design</h2>
                 <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
             </div>
 
             <!-- Mobile App Development -->
             <div class="card">
-                <img src="/mobilebenefit.png" alt="">
-                <h3>Mobile App Development</h3>
+                <img src="/duo-icons_app.png" alt="">
+                <h2 class="blacktext">Mobile App Development</h2>
                 <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
             </div>
 
             <!-- Web Development -->
             <div class="card bg-yellow">
                 <img src="/webbenefit.png" alt="">
-                <h3>Web Development</h3>
+                <h2>Web Development</h2>
                 <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
             </div>
 
             <!-- Digital Marketing -->
             <div class="card">
                 <img src="/digitalbenefit.png" alt="">
-                <h3>Digital Marketing</h3>
+                <h2 class="blacktext">Digital Marketing</h2>
                 <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
             </div>
 
             <!-- Video Editing -->
             <div class="card bg-yellow">
                 <img src="/video.png" alt="">
-                <h3>Video Editing</h3>
+                <h2>Video Editing</h2>
+               
                 <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
             </div>
         </div>
