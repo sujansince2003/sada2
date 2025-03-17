@@ -1,7 +1,5 @@
 @extends('layout.app')
-
 @include('components.header')
-
 @section('content')
     <div>
         <div >
@@ -13,7 +11,5 @@
         @include('components.ourteam')
         @include('components.contact')
         @include('components.footer')
-
-
-    </div>
+</div>
 @endsection
