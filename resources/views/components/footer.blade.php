@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer with Internal CSS</title>
+    <title>Responsive Footer</title>
     <style>
+        /* Global Styles */
         body {
             font-family: sans-serif;
             margin: 0;
             padding: 0;
-           
         }
+
         .footer {
             background-color: #1a1a1a;
             padding: 50px 20px;
             color: white;
         }
+
         .footer-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -23,44 +25,54 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
         }
+
         .footer h6 {
             font-size: 14px;
             font-weight: 600;
             margin-bottom: 10px;
         }
+
         .footer ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
+
         .footer ul li {
             margin-bottom: 8px;
         }
+
         .footer a {
             text-decoration: none;
             color: #b0b0b0;
             font-size: 13px;
             transition: color 0.3s ease;
         }
+
         .footer a:hover {
             color: white;
         }
+
         .social-icons {
             display: flex;
             gap: 15px;
         }
+
         .social-icons svg {
             width: 30px;
             height: 30px;
             fill: #b0b0b0;
             transition: fill 0.3s ease;
         }
+
         .social-icons a:hover svg {
             fill: white;
         }
+
         .subscribe {
             margin-top: 20px;
         }
+
         .subscribe a {
             display: inline-block;
             background-color: #007bff;
@@ -71,17 +83,83 @@
             text-decoration: none;
             transition: background 0.3s ease;
         }
+
         .subscribe a:hover {
             background-color: #0056b3;
         }
+
         .footer hr {
             border: 1px solid #333;
             margin: 20px 0;
         }
+
         .footer p {
             text-align: center;
             font-size: 13px;
             color: #b0b0b0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 20px;
+            }
+
+            .footer h6 {
+                font-size: 13px;
+            }
+
+            .footer a {
+                font-size: 12px;
+            }
+
+            .social-icons svg {
+                width: 25px;
+                height: 25px;
+            }
+
+            .subscribe a {
+                font-size: 12px;
+                padding: 8px 16px;
+            }
+
+            .footer p {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-container {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 15px;
+            }
+
+            .footer h6 {
+                font-size: 12px;
+            }
+
+            .footer a {
+                font-size: 11px;
+            }
+
+            .social-icons {
+                gap: 10px;
+            }
+
+            .social-icons svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            .subscribe a {
+                font-size: 11px;
+                padding: 6px 12px;
+            }
+
+            .footer p {
+                font-size: 11px;
+            }
         }
     </style>
 </head>
