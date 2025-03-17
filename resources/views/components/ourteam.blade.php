@@ -18,26 +18,29 @@
             padding: 5rem 1.5rem;
             text-align: center;
         }
-
+        .description {
+         max-width: 800px; /* Limit width */
+         margin: 0 auto 2rem auto; /* Center align + spacing */
+         font-size: 14px;
+        font-weight: 300;
+        line-height: 1.6; /* Better readability */
+}
         .title {
             font-size: 1.875rem;
             font-weight: bold;
             margin-bottom: 0.5rem;
+            color: white;
         }
 
         .subtitle {
+           
             font-size: 1.125rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
+            font-weight: 600;
+            margin: 1rem 0;
         }
 
-        .description {
-            font-size: 1.125rem;
-            max-width: 800px;
-            margin: 0 auto 3rem auto;
-            color: #E5E7EB; /* Tailwind gray-300 */
-        }
-
+       
+  
         .team-container {
             display: flex;
             justify-content: center;
@@ -72,6 +75,19 @@
                 flex-direction: column;
                 align-items: center;
             }
+            .subtitle {
+            font-size: 12px;
+            font-weight: 600;
+            margin:1rem 0rem;
+        }
+        .description {
+         max-width: 350px; /* Limit width */
+         margin: 0 auto 1rem auto; /* Center align + spacing */
+         font-size: 8px;
+        font-weight: 300;
+        line-height: 1.6; /* Better readability */
+}
+      
         }
     </style>
 </head>
@@ -80,12 +96,12 @@
 <div class="bg-black">
     <!-- Section Title -->
     <h2 class="title">We bring a wealth of Experience</h2>
-    <h3 class="subtitle">From a wide range of Background</h3>
+    <p class="subtitle">From a wide range of Background</p>
 
-    <p class="description">
+     <h4 class="description">
         We have a simple philosophy: Hire great people, provide them the required resources and support to do their job.
-    </p>
-
+    </h4> 
+    
     <!-- Team Members -->
     <div class="team-container">
         <!-- Member 1 -->
