@@ -22,15 +22,16 @@
             padding: 5rem 1.5rem;
         }
 
-        .text-center {
-            text-align: center;
-        }
+       
 
-        .title {
+        .titlexs {
             font-size: 1.875rem;
             font-weight: bold;
             color: #1F2937; /* Tailwind gray-800 */
             margin-bottom: 3rem;
+            text-align: center;
+          
+        
         }
 
         .process-container {
@@ -43,7 +44,10 @@
 
         .step {
             text-align: center;
-            max-width: 280px;
+            max-width: 180px;
+            position: relative;
+          
+           
         }
 
         .step-number {
@@ -51,18 +55,19 @@
             justify-content: center;
             align-items: center;
             background: #3B82F6; /* Tailwind blue-500 */
-            width: 4rem;
-            height: 4rem;
+            width: 3rem;
+            height: 3rem;
             border-radius: 50%;
             color: white;
             font-size: 1.25rem;
             font-weight: bold;
             margin: 0 auto 1rem auto;
+            position: absolute;
         }
 
         .step img {
             width: 100%;
-            border-radius: 0.5rem;
+            border-radius: 10rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-bottom: 1rem;
         }
@@ -86,23 +91,24 @@
         @media (max-width: 768px) {
             .process-container {
                 flex-direction: column;
-                gap: 1rem;
+                gap: 2rem;
             }
 
             .arrow {
                 transform: rotate(90deg);
+                
             }
         }
     </style>
 </head>
 <body>
 
-<div class="bg-gray">
+<div class="bg-gray" id="process"> 
     <div class="container">
         <!-- Section Title -->
-        <div class="text-center">
-            <h2 class="title">Our Development Process</h2>
-        </div>
+       
+            <h2 class="titlexs">Our Development Process</h2>
+      
 
         <!-- Process Steps -->
         <div class="process-container">
